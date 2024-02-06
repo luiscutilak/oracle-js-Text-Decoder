@@ -39,24 +39,11 @@
         <div class="form-group">
             <input class="form-control" placeholder="Digite seu texto aqui..." id="focusedInput" value="" type="text"  max-length="50" size="50">
             <a href="#" onclick="btnEncrypt()" class="btn btn-primary">Criptografar</a>
-            <a href="#" class="btn btn-default">Descriptografar</a>
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                        <h4 class="modal-title">Nenhuma Mensagem Encontrada!</h4>
-                    </div>
-                    <div class="modal-body">
-                        <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
-                    </div>
-                    <div class="modal-footer">
-                        <button id="btn-close-modal" type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                        <button id="btn-copy-modal" type="button" class="btn btn-primary">Copy changes</button>
-                    </div>
-                </div>
-            </div>
+            <a href="#" onclick="btnDecrypt()" class="btn btn-default">Descriptografar</a>
         </div>
-        <img src="./image/lupa-encriptyon.png" width="250" height="550">
+        <div class="output">
+            <img src="./image/lupa-encriptyon.png" width="650" height="550">
+        </div>
     </div>
     
     <div class="row tall-row">

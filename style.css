@@ -27,12 +27,12 @@ body{
     justify-content: end;
 }
 
-.rectangle-container > img{
+/* .rectangle-container > img{
     border-radius: 30px;
     box-sizing: border-box;
     width: 50%;
     padding: 5px;
-}
+} */
 
 .form-group {
     display: flex;
@@ -63,4 +63,10 @@ margin: 0 4px;
 
 .col-md-12 {
     margin-top: -50px;
+}
+
+.output {
+    border-radius: 30px;
+    box-sizing: border-box;
+    margin-left: 55px;
 }

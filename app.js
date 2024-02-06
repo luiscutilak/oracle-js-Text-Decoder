@@ -29,4 +29,14 @@
          }
        }
 
+      //  textModalHideTitle / esconda
+      //  textModalHideBody / recebe encryptedTextArray
     }
+
+    btnDecrypt.onclick = () => {
+       const textInput =  document.querySelector('input').value;
+       const textOutput = document.querySelector('p');
+       const textModalHideTitle = document.querySelector('h4');
+       const textModalHideBody = document.querySelector('.modal-body');
+    }
+    
