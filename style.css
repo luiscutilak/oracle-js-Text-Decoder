@@ -1,0 +1,66 @@
+body{
+    box-sizing: border-box;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.jumbotron{
+    padding: 1px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 100px;
+    margin-left: 100px;
+    margin: 0px 100px;
+}
+
+
+
+.rectangle-container {
+    background-color: #080808;
+    box-sizing: border-box;
+    display: flex;
+    margin-bottom: 200px;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding: 36px;
+    justify-content: end;
+}
+
+.rectangle-container > img{
+    border-radius: 30px;
+    box-sizing: border-box;
+    width: 50%;
+    padding: 5px;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-right: 12px;
+}
+
+.form-control{
+    margin-right: 5px;
+    padding: 6px 10px;
+}
+
+.btn-primary {
+margin: 0 4px;
+}
+
+.modal-dialog{
+    position: absolute;
+    margin-left: 46%;
+    margin-bottom: 4%;
+}
+
+.row {
+    margin-top: -198px;
+    margin-left: 89px;
+    margin-right: 100px;
+}
+
+.col-md-12 {
+    margin-top: -50px;
+}
