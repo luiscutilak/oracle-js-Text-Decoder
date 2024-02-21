@@ -1,42 +1,18 @@
-   
-   const btnEncrypt = document.querySelector('.btn btn-primary');
-   const btnDecrypt = document.querySelector('.btn btn-default');
-   
-   
-   
-   btnEncrypt.onclick = () => {
+const textInput = document.querySelector("#focusedInput");
+const outInput = document.querySelector("#textArea");
 
-       const textInput =  document.querySelector('input').value;
-       const textOutput = document.querySelector('p');
-       const textModalHideTitle = document.querySelector('h4');
-       const textModalHideBody = document.querySelector('.modal-body'); 
-       const arrayTextInput = textInput.split('');
-       const encryptedTextArray = []; 
-   
-       for (const i of arrayTextInput) {
-         if (arrayTextInput[i] === 'a') {
-            encryptedTextArray.push('ai');
-         }else if (arrayTextInput[i] === 'e') {
-            encryptedTextArray.push('enter');
-         }else if (arrayTextInput[i] === 'i') {
-            encryptedTextArray.push('imes');
-         } else if (arrayTextInput[i] === 'o') {
-            encryptedTextArray.push('ober');
-         } else if (arrayTextInput[i] === 'u') {
-            encryptedTextArray.push('ufat');
-         } else {
-            encryptedTextArray.push(arrayTextInput[i]);
-         }
-       }
+function encrypt() {
+   const text = textInput.value;
 
-      //  textModalHideTitle / esconda
-      //  textModalHideBody / recebe encryptedTextArray
-    }
+   const codedWord = text
+   .replace(/a/g, "ai")
+   .replace(/e/g, "enter")
+   .replace(/i/g, "imes")
+   .replace(/o/g, "ober")
+   .replace(/u/g, "ufat");
 
-    btnDecrypt.onclick = () => {
-       const textInput =  document.querySelector('input').value;
-       const textOutput = document.querySelector('p');
-       const textModalHideTitle = document.querySelector('h4');
-       const textModalHideBody = document.querySelector('.modal-body');
-    }
-    
+   document.getElementById('textArea')
+   .innerHTML = '<input readonly id="focusedInput">' 
+   + codedWord + 
+  '<' + '<a class="btn-copy" id="copy-btn" onclick="copy()">Copiar</a>'  
+}

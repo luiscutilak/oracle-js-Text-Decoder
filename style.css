@@ -12,9 +12,12 @@ body{
     margin-right: 100px;
     margin-left: 100px;
     margin: 0px 100px;
+    
 }
 
-
+.jumbotron > h1{
+color: #58f802;
+}
 
 .rectangle-container {
     background-color: #080808;
@@ -31,13 +34,12 @@ body{
 
 .form-group {
     display: flex;
-    align-items: center;
-    margin-right: 12px;
 }
 
 .form-control{
     margin-right: 5px;
-    padding: 6px ;
+    padding: 6px;
+    
 }
 
 .btn-primary {
@@ -57,7 +59,7 @@ margin: 0 4px;
 }
 
 .col-md-12 {
-    margin-top: -51px;
+    margin-top: -55px;
 }
 
 .output {
@@ -69,9 +71,42 @@ margin: 0 4px;
 .text-alert{
     display: flex;
 }
-.text-danger p{
+
+.text-danger >p{
+    color: red;
+}
+
+
+.botao-copiar{
+   text-align: center;
+   margin-top: 10px;
+}
+
+.form-group-input-btn{
+    align-items: center;
+    display: inline-table;
+    width: 700%;
+}
+
+#focusedInput{
+    width: 100%;
+}
+
+.form-btn{
     display: flex;
-    margin: auto -100%;
-    margin-top: 200px;
-    margin-left: -680px;
+    justify-content: end;
+}
+
+.btn btn-primary{
+    width: 50%;
+}
+
+.btn btn-default{
+    width: 50%;
+}
+
+.btn-copy {
+    display: flex;
+    margin-left: 45%;
+
 }

@@ -37,17 +37,31 @@
     </div>
     <div class="rectangle-container">
         <div class="form-group">
-            <input class="form-control" placeholder="Digite seu texto aqui..." id="focusedInput" value="" type="text"  max-length="50" size="50">
-            <a href="#" onclick="btnEncrypt()" class="btn btn-primary">Criptografar</a>
-            <a href="#" onclick="btnDecrypt()" class="btn btn-default">Descriptografar</a>
+            <div class="form-group-input-btn">
+                <input class="form-control" placeholder="Digite seu texto..." id="focusedInput" value="" type="text"
+                    max-length="50" size="50">
+                <div class="form-btn">
+                    <a href="#" class="btn btn-primary" style="width:50%">Criptografar</a>
+                    <a href="#" class="btn btn-default" style="width:50%">Descriptografar</a>
+                </div>
+                <span class="text-danger">
+                    <p>⚠️​ATENÇÃO apenas letras minúsculas, não utilizar letras com acentos ou caracteres especiais.
+                    </p>
+                </span>
+                <textarea class="form-control" rows="5" id="textArea"></textarea>
+                <span class="help-block">Seu texto Aqui...</span>
+                <div class="btn-copy" id="copy-btn">
+                    <a href="#" class="btn btn-primary">Copiar</a>
+                </div>
+            </div>
             <div class="text-alert">
-                <div class="text-danger">
-                    <p>⚠️​ATENÇÃO apenas letras minúsculas, não utilizar letras com acentos ou caracteres especiais. </p>
-                </div>    
             </div>
         </div>
         <div class="output">
-            <img src="./image/lupa-encriptyon.png" width="650" height="550">
+            <div class="text__output-area">
+                <label for="textArea" class="col-lg-2 control-label"></label>
+                <img src="./image/lupa-encriptyon.png" width="650" height="550">
+            </div>
         </div>
     </div>
     <div class="row tall-row">
