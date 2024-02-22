@@ -59,10 +59,10 @@ margin: 0 4px;
 }
 
 .col-md-12 {
-    margin-top: -55px;
+    margin-top: -130px;
 }
 
-.output {
+.container__lupa-img{
     border-radius: 30px;
     box-sizing: border-box;
     margin-left: 55px;
@@ -110,3 +110,4 @@ margin: 0 4px;
     margin-left: 45%;
 
 }
+

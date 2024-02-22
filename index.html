@@ -1,24 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/hacker.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="estilos/media-query.css">
+    <link rel="shortcut icon" href="#">
     <title>Decodificador de Texto</title>
 </head>
 
 <body>
+
     <a href="https://www.alura.com.br/"><img style="position: absolute; top: 0; left: 0; border: 0;z-index:1001;"
             src="./image/alura-icon2.png" width="80" height="70" alt="ALLURA Logo"></a>
+
     <nav class="navbar navbar-default navbar-static-top">
+
         <div class="container">
 
             <div class="navbar-header">
                 <a class="navbar-brand" href="#"><img src="./image/oracle.png" width="80" height="60"></a><img
-                    src="./image/download-removebg-preview.png" width="150" height="70"></a>
+                src="./image/download-removebg-preview.png" width="150" height="70"></a>
             </div>
+
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
                     <li class="dropdown">
@@ -26,47 +32,50 @@
                     <li><a href="https://www.linkedin.com/in/luis-fernando-cutilak-developer">Linkedin</a></li>
                     <li><a href="https://twitter.com/LCutilak">twitter</a></li>
                 </ul>
-                </li>
-                </ul>
             </div>
+
         </div>
     </nav>
+
     <div class="jumbotron">
         <h1>Text Decoder</h1>
-
     </div>
+
     <div class="rectangle-container">
+        
         <div class="form-group">
-            <div class="form-group-input-btn">
-                <input class="form-control" placeholder="Digite seu texto..." id="focusedInput" value="" type="text"
-                    max-length="50" size="50">
-                <div class="form-btn">
-                    <a href="#" class="btn btn-primary" style="width:50%">Criptografar</a>
-                    <a href="#" class="btn btn-default" style="width:50%">Descriptografar</a>
-                </div>
-                <span class="text-danger">
-                    <p>⚠️​ATENÇÃO apenas letras minúsculas, não utilizar letras com acentos ou caracteres especiais.
-                    </p>
-                </span>
+
+                <div class="form-group-input-btn">
+                        <input class="form-control" placeholder="Digite seu texto..." id="focusedInput"type="text"
+                        max-length="50" size="50">
+
+                    <div class="form-btn">
+                        <a href="#" onclick="encrypt()" class="btn btn-primary" style="width:50%">Criptografar</a>
+                        <a href="#" onclick="decrypt()" class="btn btn-default" style="width:50%">Descriptografar</a>
+                    </div>
+
+                    <span class="text-danger">
+           
+                        <p>⚠️​ATENÇÃO apenas letras minúsculas, não utilizar letras com acentos ou caracteres   especiais.
+                        </p>
+            
                 <textarea class="form-control" rows="5" id="textArea"></textarea>
                 <span class="help-block">Seu texto Aqui...</span>
-                <div class="btn-copy" id="copy-btn">
-                    <a href="#" class="btn btn-primary">Copiar</a>
-                </div>
+                   
+            <div class="btn-copy">
+                <a href="#" onclick="copy()" class="btn btn-primary" id="copy-btn">Copiar</a>
             </div>
-            <div class="text-alert">
-            </div>
+
         </div>
-        <div class="output">
-            <div class="text__output-area">
-                <label for="textArea" class="col-lg-2 control-label"></label>
+            
+        </div>
+        <div class="container__lupa-img">
                 <img src="./image/lupa-encriptyon.png" width="650" height="550">
-            </div>
         </div>
     </div>
     <div class="row tall-row">
         <div class="col-md-12">
-            <p>Created by <a href="//bachittarjeet.github.io">Luís Fernando Cutilak</a>. &copy; 2024</p>
+            <p>Created by <a href="//luiscutilaktextdecoder.github.io">Luís Fernando Cutilak</a>. &copy; 2024</p>
         </div>
     </div>
     <script src="./app.js"></script>
