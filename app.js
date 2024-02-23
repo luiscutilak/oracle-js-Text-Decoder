@@ -1,5 +1,5 @@
 let textInput = document.querySelector('#focusedInput');
-// let outInput = document.querySelector('#textArea');
+let outInput = document.querySelector('#textArea');
 
 
 function encrypt() {
@@ -14,7 +14,6 @@ function encrypt() {
    //Atualize conteúdo do elemento #textArea com o texto criptografado
    let outInput = document.getElementById('textArea')
    outInput.innerHTML = encryptedWord;
-   console.log(outInput.innerHTML);
    
   //  outInput.innerHTML = `<textarea readonly id="focusedInput">${encryptedWord}</textarea>
   //  <a href="#" id="copy-btn" onclick="copy()">Copiar</a>`;
@@ -24,7 +23,6 @@ function encrypt() {
 function decrypt() {
 
   let text = textInput.value;
-  console.log(text);
   let decryptedWord = text
   .replace(/ai/g, "a")
   .replace(/enter/g, "e")
@@ -34,6 +32,7 @@ function decrypt() {
 
   let outInput = document.getElementById('textArea')
     outInput.innerHTML = decryptedWord;
+
   // `<textarea readonly id="focusedInput">${decryptedWord}</textarea>
   // <a href="#" id="copy-btn" onclick="copy()">Copiar</a>`;
 
@@ -41,8 +40,10 @@ function decrypt() {
 
 // Função que copia o texto criptografado
 function copy() {
-  outInput.querySelector('#textarea').select()
-  document.execCommand('copy')
+  let textoCopiado = document.querySelector("#textArea");
+  console.log(textoCopiado);
+  textoCopiado.select();
+  document.execCommand("copy");
   alert("Texto copiado para area de transferência.");
-
 }
+
