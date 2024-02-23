@@ -11,13 +11,11 @@ function encrypt() {
    .replace(/i/g, "imes")
    .replace(/o/g, "ober")
    .replace(/u/g, "ufat");
+
    //Atualize conteúdo do elemento #textArea com o texto criptografado
    let outInput = document.getElementById('textArea')
    outInput.innerHTML = encryptedWord;
-   
-  //  outInput.innerHTML = `<textarea readonly id="focusedInput">${encryptedWord}</textarea>
-  //  <a href="#" id="copy-btn" onclick="copy()">Copiar</a>`;
-
+ 
 }
 
 function decrypt() {
@@ -33,16 +31,13 @@ function decrypt() {
   let outInput = document.getElementById('textArea')
     outInput.innerHTML = decryptedWord;
 
-  // `<textarea readonly id="focusedInput">${decryptedWord}</textarea>
-  // <a href="#" id="copy-btn" onclick="copy()">Copiar</a>`;
-
 }
 
 // Função que copia o texto criptografado
 function copy() {
-  let textoCopiado = document.querySelector("#textArea");
-  console.log(textoCopiado);
-  textoCopiado.select();
+  let copiedText = document.querySelector("#textArea");
+  
+  copiedText.select();
   document.execCommand("copy");
   alert("Texto copiado para area de transferência.");
 }

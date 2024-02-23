@@ -4,10 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/hacker.css" rel="stylesheet">
+    <link href="css/hackerStyle.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
     <link rel="stylesheet" href="estilos/media-query.css">
     <link rel="shortcut icon" href="#">
+    <link rel="icon" type="image/teclado" href="./image/icons8-segurança-ssl-50.png">
     <title>Decodificador de Texto</title>
 </head>
 
@@ -49,24 +50,23 @@
                         <input class="form-control" placeholder="Digite seu texto..." id="focusedInput"type="text"
                         max-length="50" size="50">
 
-                    <div class="form-btn">
-                        <a href="#" onclick="encrypt()" class="btn btn-primary" style="width:50%">Criptografar</a>
-                        <a href="#" onclick="decrypt()" class="btn btn-default" style="width:50%">Descriptografar</a>
-                    </div>
+                        <div class="form-btn">
+                            <a href="#" onclick="encrypt()" class="btn btn-primary" style="width:50%">Criptografar</a>
+                            <a href="#" onclick="decrypt()" class="btn btn-default" style="width:50%">Descriptografar</a>
+                        </div>
 
-                    <span class="text-danger">
+                        <span class="text-danger">
            
-                        <p>⚠️​ATENÇÃO apenas letras minúsculas, não utilizar letras com acentos ou caracteres   especiais.
-                        </p>
+                        <p>⚠️​ATENÇÃO apenas letras minúsculas, não utilizar letras com acentos ou caracteres   especiais.</p>
             
-                <textarea class="form-control" rows="5" id="textArea"></textarea>
-                <span class="help-block">Seu texto Aqui...</span>
+                        <textarea class="form-control" rows="5" id="textArea"></textarea>
+                        
+                        <span class="help-block">Seu texto Aqui...</span>
                    
-            <div class="btn-copy">
-                <a href="#" onclick="copy()" class="btn btn-primary" id="copy-btn">Copiar</a>
-            </div>
-
-        </div>
+                    <div class="btn-copy">
+                        <a href="#" onclick="copy()" class="btn btn-primary" id="copy-btn">Copiar</a>
+                    </div>
+              </div>
             
         </div>
         <div class="container__lupa-img">
