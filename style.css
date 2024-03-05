@@ -116,3 +116,13 @@ margin: 0 4px;
     flex-direction: row;
     flex-wrap: wrap;
 }
+
+.lupa__img{
+    width: 105%;
+    height: 65%;
+    margin-top: -12px;
+}
+
+.col-md-12{
+    margin-top: -350px;
+}
